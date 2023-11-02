@@ -1,0 +1,113 @@
+body{
+    padding:0;
+    margin:0;
+
+
+}
+.login{
+    background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+    position:absolute;
+    top:50%;
+    left:50%;
+    width:50%;
+    height:auto;
+    transform:translate(-50%,-50%);
+    border:1px solid black;
+    display: flex;
+    flex-direction: column;
+    border-radius: .5rem;
+    background-color:transparent;
+    padding:20px;
+    animation: move 2s 1;
+    transition: all 1s linear;
+
+}
+@keyframes move {
+    0%{
+        transform:scaleX(0) translate(-50%,-50%);
+    }
+    100%{
+        transform:scaleX(1) translate(-50%,-50%);
+    }
+}
+h1{
+    text-align: center;
+
+}
+label{
+    margin:0 5px;
+    align-items: center;
+}
+input{
+    margin:5px;
+    
+
+}
+#submit{
+    position:relative;
+    background-color: rgb(177, 171, 164);
+    border:none;
+    margin:5px 0;
+    cursor: pointer;
+}
+#submit:hover{
+    background: #1d3f60;
+    color: rgb(113, 248, 10);
+}
+i{
+    text-align: left;
+    font-size:15px;
+    color:red;
+    padding:0;
+
+}
+.sucess{
+
+font-size:2rem;
+color:rgb(105, 234, 0);
+text-shadow:1px 1px 1px black;
+text-transform: capitalize;
+position:absolute;
+top:50%;
+left:50%;
+transform: translate(-50%,-50%);
+animation: show 2s  1;
+}
+@keyframes show{
+    0%{
+        transform:scaleY(0) scaleX(1) translate(-50%,-50%);
+    }
+    100%{
+        transform:scaleX(1) translate(-50%,-50%);
+    }
+}
+.login-back{
+    background: rgba(1, 142, 229, 0.66);
+}
+.s1{
+    font-size:3rem;
+    color: rgb(0, 90, 142);
+    text-decoration:underline;
+    cursor: pointer;
+}
+.s1:hover{
+    color:black;
+}
+
+
+@media only screen and (max-width: 500px) {
+    
+    .login{
+        top:40%;
+        height:17rem;
+        
+    }
+    label{
+        padding:10px 0;
+    }
+    .sucess{
+        top:40%;
+        font-size:1.2rem;
+    }
+
+  }
